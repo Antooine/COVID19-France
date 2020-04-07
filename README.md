@@ -104,7 +104,6 @@ $ python3 CovidFrance.py
  - **TwitterEngine** - *Permet de communiquer avec Twitter.*
  - **yesterdayData.json** - *Données du jour d'avant*
 
----
 ## Remerciements
 
 Je tiens sincèrement à vous remercier si vous consultez ce repo ou même si vous avez suivis le compte, lorsque j'ai créé ce programme je ne pensais pas qu’autant de personnes me feraient confiance ! 
@@ -116,20 +115,17 @@ Je tiens à remercier tout spécialement **[@Conflits_FR](https://twitter.com/Co
 </p>
 
 
----
+
 ## Licence
 MIT
 
----
+
 ## Contactez-moi
 **Twitter - [@xrths](https://twitter.com/xrths)**
 
----
 ## Vous aimerez peut-être aussi
 - [FreeboxAPI-Exemple](https://github.com/Ottawas/FreeboxAPI-Exemple) - Exemple d'utilisation de l'API Freebox (V6) en Python.
---- 
+
 
 ## Support
 <a href="https://www.buymeacoffee.com/xrths" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
----
