@@ -93,16 +93,16 @@ $ python3 CovidFrance.py
 
 ## Informations
 
-**CovidFrance** - *Lance l'entièreté du programme.*
-**APIEngine** - *Permet de récupérer les données sur: www.dashboard.covid19.data.gouv.fr*
-**GraphEngine** - *Permet de créer un graphique sous forme de PNG.*
-**graphData** - *Contient les données du graphique.*
-**graphIMG.png** - *Graphique image*
-**MathsEngine** - *Permet d'effectuer les calculs et de vérifier les données.*
-**TimeEngine** - *Permet de connaitre le nombre de jours du confinement.*
-**todayData.json** - *Données d'aujourd'hui*
-**TwitterEngine** - *Permet de communiquer avec Twitter.*
-**yesterdayData.json** - *Données de hier*
+ - **CovidFrance** - *Lance l'entièreté du programme.*
+ - **APIEngine** - *Permet de récupérer les données sur: www.dashboard.covid19.data.gouv.fr*
+ - **GraphEngine** - *Permet de créer un graphique sous forme de PNG.*
+ - **graphData** - *Contient les données du graphique.*
+ - **graphIMG.png** - *Graphique en image*
+ - **MathsEngine** - *Permet d'effectuer les calculs et de vérifier les données.*
+ - **TimeEngine** - *Permet de connaitre le nombre de jours du confinement.*
+ - **todayData.json** - *Données d'aujourd'hui*
+ - **TwitterEngine** - *Permet de communiquer avec Twitter.*
+ - **yesterdayData.json** - *Données du jour d'avant*
 
 ---
 ## Remerciements
