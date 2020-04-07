@@ -34,20 +34,22 @@
 </p>
 
 <p align="center">
-  <a href="#données-lues">Données lues</a> •
-  <a href="#utilisation">Utilisation</a> •
-  <a href="#remerciements">Remerciements</a> •
-  <a href="#licence">Licence</a> •
-  <a href="#contactez-moi">Contactez-moi</a> •
+  <a href="#données">Données</a> |
+  <a href="#utilisation">Utilisation</a> |
+  <a href="#remerciements">Remerciements</a> |
+  <a href="#licence">Licence</a>  |
+  <a href="#contactez-moi">Contactez-moi</a> |
   <a href="#support">Support</a> 
+  <br>
+  <a href="https://www.xrths.fr">Consultez mon portofolio !</a> 
 </p>
 
 <p align="center">
   <img src="https://i.ibb.co/M58RZFz/screely-1586216563483.png">
 </p>
 
-## Données lues
-***Les données sont lues sur [www.dashboard.covid19.data.gouv.fr](https://dashboard.covid19.data.gouv.fr/)***
+## Données
+***Les données sont lues (scraping) sur [www.dashboard.covid19.data.gouv.fr](https://dashboard.covid19.data.gouv.fr/)***
 
 * Cas totaux = 'totalCases'
 * Cas décédés en hopîtaux = 'deadCases'
@@ -65,7 +67,7 @@
 
 ```bash
 # Cloner ce dépôt
-$ git clone LIEN
+$ git clone https://github.com/Ottawas/COVID19France
 
 # Accéder au dossier
 $ cd DOSSIER
