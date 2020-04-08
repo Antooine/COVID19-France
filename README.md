@@ -11,7 +11,7 @@
 
 <h4 align="center">Bot Twitter qui fournit les chiffres du COVID-19 pour la France. 
 <br>
-<a href="https://twitter.com/COVID_France" target="_blank">COVID_France</a></h4>
+<a href="https://twitter.com/COVID_France" target="_blank">COVID_France (20K)</a></h4>
 
 <p align="center">
   <a href="https://badge.fury.io/py/tweepy">
