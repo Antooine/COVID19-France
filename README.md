@@ -66,7 +66,8 @@ Le programme dispose de sa propre API, les données du gouvernement sont retourn
 * **Cas toujours malades:** 'casMalades'
 ---
 
-**Les données sont aussi tirées de de Worldometers, l'API utilisée est:** *www.coronavirus-19-api.herokuapp.com/countries/France* 
+**Les données sont aussi tirées de de Worldometers, l'API utilisée est:** 
+*www.coronavirus-19-api.herokuapp.com/countries/France* 
 
 J'ai décidé de prendre leurs données car ils comptabilisent aussi les EHPAD/EMS dans les cas totaux dépistés positifs (ce que ne fait pas le gouvernement à ce jour).
 
