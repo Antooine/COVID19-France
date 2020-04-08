@@ -111,12 +111,12 @@ $ python3 CovidFrance.py
   <img src="https://i.ibb.co/Mk2nWzL/screely-1586382261352.png">
 </p>
 
-|INUTILE|CAS  TOTAUX CONFIRMES|HOSPITALISATIONS|REANIMATIONS|DECES|GUERIS|MALADES ACTIFS
-|--|--|--|--|--|--|--|
 *Explication du fichier "graphData.txt"*
->  0,6633,0,0,148,0,6953 
->  0,7730,2579,699,175,602,8268
-> 0,9134,3626,931,264,1000,9328
+
+    |INUTILE|CAS OTAUX CONFIRMES|HOSPITALISATIONS|REANIMATIONS|DECES|GUERIS|MALADES ACTIFS
+    0,6633,0,0,148,0,6953 
+    0,7730,2579,699,175,602,8268
+    0,9134,3626,931,264,1000,9328
 
 *J'ai fait ça rapidement et ce n'est vraiment pas optimisé, mais cela fonctionne.*
 
