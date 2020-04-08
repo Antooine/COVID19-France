@@ -1,5 +1,6 @@
 
 
+
   
 <h1 align="center">
   <br>
@@ -49,6 +50,8 @@
 </p>
 
 ## Données
+**Le bot n'est pas entièrement automatisé, il doit être exécuté manuellement (pour vérifier les données) et valider le Tweet.**
+
 ***Les données sont lues (scraping) sur [www.dashboard.covid19.data.gouv.fr](https://dashboard.covid19.data.gouv.fr/)***
 Le programme dispose de sa propre API, les données du gouvernement sont retournées sous forme de dictionnaire.
 
