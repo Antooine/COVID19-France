@@ -84,7 +84,7 @@ J'ai décidé de prendre leurs données car ils comptabilisent aussi les EHPAD/E
 
 ```bash
 # Cloner ce dépôt
-$ git clone https://github.com/Ottawas/COVID19France
+$ git clone https://github.com/xrths/COVID19France
 
 # Accéder au dossier
 $ cd COVID19France/
