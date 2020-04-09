@@ -84,10 +84,10 @@ J'ai décidé de prendre leurs données car ils comptabilisent aussi les EHPAD/E
 
 ```bash
 # Cloner ce dépôt
-$ git clone https://github.com/xrths/COVID19France
+$ git clone https://github.com/xrths/COVID19-France
 
 # Accéder au dossier
-$ cd COVID19France/
+$ cd COVID19-France/
 
 # Installer les dépendances
 $ pip3 install requirements.txt
