@@ -1,6 +1,7 @@
 
 
 
+
   
 <h1 align="center">
   <br>
@@ -52,8 +53,9 @@
 ## Données
 **Le bot n'est pas entièrement automatisé, il doit être exécuté manuellement (pour vérifier les données) et valider le Tweet.**
 
+---
 ***Les données sont lues (scraping) sur [www.dashboard.covid19.data.gouv.fr](https://dashboard.covid19.data.gouv.fr/)***
-Le programme dispose de sa propre API, les données du gouvernement sont retournées sous forme de dictionnaire.
+Le programme dispose de sa propre "API", les données du gouvernement sont retournées sous forme de dictionnaire.
 
 **Exemple (08/04/2020)**
 
@@ -69,10 +71,11 @@ Le programme dispose de sa propre API, les données du gouvernement sont retourn
 * **Cas toujours malades:** 'casMalades'
 ---
 
-**Les données sont aussi tirées de de Worldometers, l'API utilisée est:** 
+**Les données PEUVENT aussi êtres tirées de de Worldometers, l'API utilisée est:** 
 *coronavirus-19-api.herokuapp.com/countries/France* 
 
-J'ai décidé de prendre leurs données car ils comptabilisent aussi les EHPAD/EMS dans les cas totaux dépistés positifs (ce que ne fait pas le gouvernement à ce jour).
+*CEPENDANT, je déconseille fortement l'utilisation de leurs données car elles sont fausses, ils interprètent mal les chiffres.*
+
 
 **Exemple (08/04/2020)**
 
@@ -91,20 +94,24 @@ $ cd COVID19-France/
 
 # Installer les dépendances
 $ pip3 install requirements.txt
+```
+---
+**- Éditer "TwitterEngine.py":**
 
-# Modifier les Key Twitter
-- Éditer "TwitterEngine.py":
+    consumer_key = "REMPLACER" #Aller sur le portail développeur Twitter et remplacer.
+    consumer_secret = "REMPLACER"
+    access_token = "REMPLACER"
+    access_token_secret = "REMPLACER"
+   ---- 
 
-consumer_key = "REMPLACER" #Aller sur le portail développeur Twitter et remplacer.
-consumer_secret = "REMPLACER"
-access_token = "REMPLACER"
-access_token_secret = "REMPLACER"
+**- Éditer "CovidFrance.py":**
 
-- Éditer "CovidFrance.py":
-api.send_direct_message(recipient_id  = "REMPLACER", text = tweetForm) 
-#Remplacer par l'ID d'un compte qui recevra le tweet par DM (permet de le prévisualiser)
+    api.send_direct_message(recipient_id  = "REMPLACER", text = tweetForm) 
+    #Remplacer par l'ID d'un compte qui recevra le tweet par DM (permet de le prévisualiser)
+---
+**Exécuter le programme**
 
-# Exécuter le programme
+```bash
 $ python3 CovidFrance.py
 ```
 
@@ -116,12 +123,14 @@ $ python3 CovidFrance.py
 
 *Explication du fichier "graphData.txt"*
 
-    |INUTILE|CAS TOTAUX CONFIRMES|HOSPITALISATIONS|REANIMATIONS|DECES|GUERIS|MALADES ACTIFS
-    0,6633,0,0,148,0,6953 
-    0,7730,2579,699,175,602,8268
-    0,9134,3626,931,264,1000,9328
+    |-|CAS TOTAUX CONFIRMES|HOSPITALISATIONS|REANIMATIONS|DECES|GUERIS
+    0,6633,0,0,148,0 
+    0,7730,2579,699,175,602
+    0,9134,3626,931,264,1000
 
-*J'ai fait ça rapidement et ce n'est vraiment pas optimisé, mais cela fonctionne.*
+**N.B: Les "0" sont obligatoires à chaques début de ligne.** 
+
+*J'ai fait ça rapidement et ce n'est vraiment pas optimisé, mais cela fonctionne.**
 
 ## Remerciements
 
