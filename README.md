@@ -95,21 +95,20 @@ $ cd COVID19-France/
 # Installer les dépendances
 $ pip3 install requirements.txt
 ```
----
+
 **- Éditer "TwitterEngine.py":**
 
     consumer_key = "REMPLACER" #Aller sur le portail développeur Twitter et remplacer.
     consumer_secret = "REMPLACER"
     access_token = "REMPLACER"
     access_token_secret = "REMPLACER"
-   ---- 
 
 **- Éditer "CovidFrance.py":**
 
     api.send_direct_message(recipient_id  = "REMPLACER", text = tweetForm) 
     #Remplacer par l'ID d'un compte qui recevra le tweet par DM (permet de le prévisualiser)
----
-**Exécuter le programme**
+
+**- Exécuter le programme**
 
 ```bash
 $ python3 CovidFrance.py
