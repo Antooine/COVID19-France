@@ -143,7 +143,7 @@ Exemple modification:*
     
 **Rendre le programme automatique**
 Il suffit de créer une tâche CRON.
-Exemple qui éxécute le programme toutes les 8 minutes:
+Exemple qui exécute le programme toutes les 8 minutes:
 
     */8 * * * * python3 /root/COVID_France/CovidFrance.py > /root/COVID_France/log.txt 2>&1
 
