@@ -93,31 +93,58 @@ $ git clone https://github.com/xrths/COVID19-France
 $ cd COVID19-France/
 
 # Installer les dépendances
-$ pip3 install requirements.txt
+$ pip install -r requirements.txt
 ```
 
-**- Éditer "TwitterEngine.py":**
+**- Fichier configuration [config.ini]:**
 
-    consumer_key = "REMPLACER" #Aller sur le portail développeur Twitter et remplacer.
-    consumer_secret = "REMPLACER"
-    access_token = "REMPLACER"
-    access_token_secret = "REMPLACER"
-
-**- Éditer "CovidFrance.py":**
-
-    api.send_direct_message(recipient_id  = "REMPLACER", text = tweetForm) 
-    #Remplacer par l'ID d'un compte qui recevra le tweet par DM (permet de le prévisualiser)
-
-**- Exécuter le programme**
+    [TwitterAPI] 
+    #http://gettwitterid.com/
+    
+    user_id  = 1222609878889443329 #ID DU COMPTE TWITTER
+    preview_id  = 3400092689 #ID D'UN COMPTE QUI RECEVRA LE LIEN DU TWEET
+    app_name  =  #RestezChezVous #Nom de l'application sur Twitter (important)
+    account_name  = COVID_France #Nom du compte Twitter
+    
+    #Vos Key API Twitter:
+    consumer_key  = 8beSzxxxxxxxxxxxxxxx
+    consumer_secret  = u3r7yQdLAxxxxxxxxxxxxxxxxxxxxxxxxxx
+    access_token  = 1222xxxxxxxxxxxxxxxx-g9Rxxxxxxxxxxxxxxxxxxxxxxx
+    access_token_secret  = 842f50xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    
+    [System]
+    directory  = /root/COVID_France/ #Important,chemin d'accès du bot (écrire sous la même forme)
+    checkTime  = True #Si true, le bot attendra d'être dans le créneau horaire suivant
+    startTime  = 18:55 #Début créneau horaire 
+    endTime  = 21:30 #Fin créneau horaire
+    
+    [CustomData] #Permet de modifier les données si elles sont éronées à la source
+    
+    #Laisser vide la ligne si vous ne voulez pas modifier la donnée:
+    casConfirmes  = 
+    
+    #Exemple qui modifiera la donnée:
+    decesHopital  = 10000
+    
+    decesEhpad  =
+    casReanimation  =
+    casHopital  =
+    casGueris  =
+    totalDeces  =
+    casMalades  =
 
 ```bash
 $ python3 CovidFrance.py
 ```
+**- Rendre le programme automatique:**
+Il suffit de créer une tâche CRON.
+Exemple qui éxécute le programme toutes les 8 minutes:
 
+    */8 * * * * python3 /root/COVID_France/CovidFrance.py > /root/COVID_France/log.txt 2>&1
 
 ## Graphique généré automatiquement
 <p align="center">
-  <img src="https://i.ibb.co/Mk2nWzL/screely-1586382261352.png">
+  <img src="https://i.ibb.co/kBmpg9N/screely-1586813342524.png">
 </p>
 
 *Explication du fichier "graphData.txt"*
